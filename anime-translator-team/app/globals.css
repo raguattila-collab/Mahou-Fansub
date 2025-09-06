@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  color: #5d4e37;
+  background: linear-gradient(135deg, #f5f3f0 0%, #e8e2d9 100%);
+  min-height: 100vh;
+}
+
+.anime-card {
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(212, 175, 140, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.anime-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: rgba(212, 175, 140, 0.5);
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(212, 175, 140, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.search-input {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(212, 175, 140, 0.3);
+  color: #5d4e37;
+}
+
+.search-input:focus {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: #d4af8c;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(212, 175, 140, 0.1);
+}
+
+.search-input::placeholder {
+  color: #8b7355;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #d4af8c, #c4a484);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #c4a484, #b8a082);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(212, 175, 140, 0.3);
+}
+
+.btn-secondary {
+  background: linear-gradient(45deg, #b8a082, #8b7355);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(45deg, #8b7355, #b8a082);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(184, 160, 130, 0.3);
+}
